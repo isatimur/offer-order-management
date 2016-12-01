@@ -1,0 +1,12 @@
+org.iata.ndc.edist.OfferValidPeriodType=exclude
+org.iata.ndc.edist.SeatComponentType.Locations.Location.Space.ColumnRange=exclude
+org.iata.ndc.edist.ServiceBundleType.Selection=exclude
+org.iata.ndc.edist.ListOfServiceBundleType.ServiceBundle.Selection=exclude
+generated.OfferValidPeriodType=exclude
+generated.SeatComponentType.Locations.Location.Space.ColumnRange=exclude
+generated.ServiceBundleType.Selection=exclude
+generated.ListOfServiceBundleType.ServiceBundle.Selection=exclude
+org.iata.iata.edist.OfferValidPeriodType=exclude
+org.iata.iata.edist.SeatComponentType.Locations.Location.Space.ColumnRange=exclude
+org.iata.iata.edist.ServiceBundleType.Selection=exclude
+org.iata.iata.edist.ListOfServiceBundleType.ServiceBundle.Selection=exclude
