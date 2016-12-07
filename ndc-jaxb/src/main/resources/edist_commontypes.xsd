@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2015 (http://www.altova.com) by I-A.Kotopoulos (JR Technologies, Inc.) -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions"
-            elementFormDefault="qualified" attributeFormDefault="unqualified" version="4.000" id="IATA2016.2"
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="4.000" id="IATA2016.2"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://www.altova.com/xml-schema-extensions
-http://www.altova.com/xml-schema-extensions ">
+            xsi:schemaLocation="http://www.altova.com/xml-schema-extensions">
     <xsd:annotation>
         <xsd:documentation xml:lang="en">EDIST XML SPECIFICATION: Common XML Objects shared by all EDIST Domains.
         </xsd:documentation>

@@ -5,13 +5,12 @@ package ru.atc.aeroflot.ndc.web.rest;
  */
 
 import com.codahale.metrics.annotation.Timed;
+import org.iata.iata.edist.AirShoppingRQ;
 import org.iata.iata.edist.AirShoppingRS;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ru.atc.aeroflot.ndc.service.AirShoppingService;
 
 import javax.inject.Inject;
@@ -49,12 +48,46 @@ public class AirShoppingResource {
     @Inject
     AirShoppingService shoppingService;
 
-
     @GetMapping(path = "/offers", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
     @Timed
     public AirShoppingRS getAllOffers() {
         //TODO create AirShoppingRQ request
         AirShoppingRS airShoppingRS = shoppingService.findOffers(null);
+        return airShoppingRS;
+    }
+
+    //TODO just leave a method post of offers and based on the content implement recognition and BPM functions
+    @PostMapping(path = "/offers", consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE}, produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @Timed
+    public AirShoppingRS getOffersOneWay(@RequestBody AirShoppingRQ shoppingRQ) {
+        //TODO create AirShoppingRQ request
+        AirShoppingRS airShoppingRS = shoppingService.oneWay(shoppingRQ);
+        return airShoppingRS;
+    }
+
+
+    @GetMapping(path = "/offers/request", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @Timed
+    public AirShoppingRQ getOffersOneWayRequestExample() {
+        //TODO create AirShoppingRQ request
+        AirShoppingRQ airShoppingRQ = shoppingService.oneWayRequestExample();
+        return airShoppingRQ;
+    }
+
+
+    @GetMapping(path = "/offers/onewaytrip", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @Timed
+    public AirShoppingRS getOffersOneWay() {
+        //TODO create AirShoppingRQ request
+        AirShoppingRS airShoppingRS = shoppingService.oneWay(null);
+        return airShoppingRS;
+    }
+
+    @GetMapping(path = "/offers/twowaytrip", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @Timed
+    public AirShoppingRS getOffersTwoWayTrip() {
+        //TODO create AirShoppingRQ request
+        AirShoppingRS airShoppingRS = shoppingService.twoWayTrip(null);
         return airShoppingRS;
     }
 }
