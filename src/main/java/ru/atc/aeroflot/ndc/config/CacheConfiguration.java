@@ -59,6 +59,7 @@ public class CacheConfiguration {
             config.getNetworkConfig().getJoin().getAwsConfig().setEnabled(false);
             config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
             config.getNetworkConfig().getJoin().getTcpIpConfig().setEnabled(false);
+            System.setProperty("hibernate.cache.region.factory_class","com.hazelcast.hibernate.HazelcastCacheRegionFactory");
         }
         config.getMapConfigs().put("default", initializeDefaultMapConfig());
         config.getMapConfigs().put("ru.atc.aeroflot.ndc.domain.*", initializeDomainMapConfig(jHipsterProperties));

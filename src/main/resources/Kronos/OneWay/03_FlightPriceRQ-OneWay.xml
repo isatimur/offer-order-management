@@ -1,6 +1,6 @@
 <FlightPriceRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.iata.org/IATA/EDIST"
-               xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../FlightPriceRQ.xsd"
-               EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-12-10T12:39:00Z" Version="15.2"
+               xsi:schemaLocation="http://www.iata.org/IATA/EDIST /FlightPriceRQ.xsd"
+               EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-12-10T12:39:00Z" Version="16.1"
                Target="Test" PrimaryLangID="en" AltLangID="en" RetransmissionIndicator="false"
                AsynchronousAllowedInd="false" TransactionIdentifier="a" SequenceNmbr="213">
     <PointOfSale>
@@ -130,24 +130,22 @@
             </Flight>
         </OriginDestination>
     </Query>
-    <Preferences>
-        <Preference>
-            <AirlinePreferences>
-                <Airline>
-                    <AirlineID>C9</AirlineID>
-                </Airline>
-            </AirlinePreferences>
-        </Preference>
-        <Preference>
-            <FarePreferences>
-                <FareCodes>
-                    <Code>
-                        <Code>EFO</Code>
-                    </Code>
-                </FareCodes>
-            </FarePreferences>
-        </Preference>
-    </Preferences>
+    <Preference>
+        <AirlinePreferences>
+            <Airline>
+                <AirlineID>C9</AirlineID>
+            </Airline>
+        </AirlinePreferences>
+    </Preference>
+    <Preference>
+        <FarePreferences>
+            <FareCodes>
+                <Code>
+                    <Code>EFO</Code>
+                </Code>
+            </FareCodes>
+        </FarePreferences>
+    </Preference>
     <DataLists>
         <OriginDestinationList>
             <OriginDestination>

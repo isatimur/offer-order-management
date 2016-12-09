@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2015 (http://www.altova.com) by Atul Bhabal (JR Technologies, Inc.) -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iata.org/IATA/EDIST" targetNamespace="http://www.iata.org/IATA/EDIST" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.001" id="IATA2016.2">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iata.org/IATA/EDIST" targetNamespace="http://www.iata.org/IATA/EDIST" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.001" id="IATA2016.1">
 	<xsd:include schemaLocation="edist_commontypes.xsd"/>
 	<xsd:include schemaLocation="edist_structures.xsd"/>
 	<!--
@@ -12,7 +12,7 @@
 -->
 	<xsd:element name="BaggageAllowanceRS">
 		<xsd:annotation>
-			<xsd:documentation source="DESCRIPTION" xml:lang="en">The BaggageAllowance transaction set provides checked and carry-on baggage allowance details. Request qualifiers may include Traveler, origin/ destination, point of sale, flight-specific and ticketed fare information. 
+			<xsd:documentation source="DESCRIPTION" xml:lang="en">The BaggageAllowance transaction set provides checked and carry-on baggage allowance details. Request qualifiers may include Traveler, origin/ destination, point of sale, flight-specific and ticketed fare information.
 
 The response returns the baggage allowance, whether or not IATA Reso 302 or DOT rules are applicable, baggage weight, dimensions and size information by origin/ destination pair. Implementers may also obtain an additional catalog of applicable embargoes and charges within the same origin and destination pair.</xsd:documentation>
 		</xsd:annotation>

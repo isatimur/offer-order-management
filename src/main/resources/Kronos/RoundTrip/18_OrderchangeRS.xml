@@ -1,4 +1,4 @@
-<OrderViewRS EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-12-10T12:39:00Z" Version="15.2" TransactionIdentifier="a" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderViewRS.xsd">
+<OrderViewRS EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-12-10T12:39:00Z" Version="16.1" TransactionIdentifier="a" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.iata.org/IATA/EDIST /OrderViewRS.xsd">
   <Document>
     <Name>C9</Name>
     <ReferenceVersion>1.0</ReferenceVersion>
@@ -831,7 +831,7 @@
         </OrderItem>
       </OrderItems>
     </Order>
-    <DataList>
+    <DataLists>
       <FlightSegmentList>
         <FlightSegment SegmentKey="SEG1">
           <Departure>
@@ -986,7 +986,7 @@
           <FlightReferences>FL2</FlightReferences>
         </OriginDestination>
       </OriginDestinationList>
-    </DataList>
+    </DataLists>
     <Metadata>
       <Other>
         <OtherMetadata>

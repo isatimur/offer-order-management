@@ -31,6 +31,7 @@ public class OrderService {
     public OrderCreateRQ oneWay() {
         OrderCreateRQ orderCreateRQ = NDCUtil.getMockResponse(resourceLoader, OrderCreateRQ.class, "classpath:/Kronos/OneWay/05_OrderCreateRQ.xml");
         return orderCreateRQ;
+
     }
 
 }

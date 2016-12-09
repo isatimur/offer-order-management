@@ -11,7 +11,18 @@
   <artifactId>ndc-jaxb</artifactId>
   <packaging>jar</packaging>
   <version>0.1.5-SNAPSHOT</version>
-  <name>JAXB classes for NDC Client</name>
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.8.4</version>
+        </dependency>
+    </dependencies>
+    <name>JAXB classes for NDC Client</name>
   <description>JAXB generated classes for NDC Client</description>
   <url>https://github.com/iata-ndc/ndc-java-sdk</url>
 

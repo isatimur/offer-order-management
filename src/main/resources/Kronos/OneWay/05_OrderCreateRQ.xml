@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <OrderCreateRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.iata.org/IATA/EDIST"
-               Version="15.2" xsi:schemaLocation="http://www.iata.org/IATA/EDIST /OrderCreateRQ.xsd">
+               Version="16.1" xsi:schemaLocation="http://www.iata.org/IATA/EDIST /OrderCreateRQ.xsd">
     <PointOfSale>
         <Location>
             <CountryCode>US</CountryCode>

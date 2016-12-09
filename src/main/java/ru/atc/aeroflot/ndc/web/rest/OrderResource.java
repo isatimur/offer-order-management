@@ -10,8 +10,10 @@ import org.iata.iata.edist.OrderViewRS;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.atc.aeroflot.ndc.service.OrderService;
+import ru.atc.aeroflot.ndc.service.mapper.OrderMapper;
 
 import javax.inject.Inject;
 
@@ -48,11 +50,22 @@ public class OrderResource {
     @Inject
     OrderService orderService;
 
+    @Inject
+    OrderMapper mapper;
+
     @GetMapping(path = "/orders/request", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
     @Timed
-    public OrderCreateRQ getAllOffers() {
-        OrderCreateRQ orderCreateRQ = orderService.oneWay();
-        return orderCreateRQ;
+    public ResponseEntity<OrderCreateRQ> getResponseOfOrderRequest() {
+        OrderCreateRQ orderDTO = mapper.orderCreateRQToOrderDTO(orderService.oneWay());
+        return ResponseEntity.ok(orderDTO);
+    }
+
+
+    @GetMapping(path = "/orders", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @Timed
+    public OrderCreateRQ getOrderRequest() {
+        OrderCreateRQ orderDTO = mapper.orderCreateRQToOrderDTO(orderService.oneWay());
+        return orderDTO;
     }
 
     //TODO just leave a method post of offers and based on the content implement recognition and BPM functions

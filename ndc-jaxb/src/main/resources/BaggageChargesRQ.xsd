@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by JRT (JR Technologies, Inc.) -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iata.org/IATA/EDIST" targetNamespace="http://www.iata.org/IATA/EDIST" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.001" id="IATA2016.2">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iata.org/IATA/EDIST" targetNamespace="http://www.iata.org/IATA/EDIST" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.001" id="IATA2016.1">
 	<xsd:include schemaLocation="edist_commontypes.xsd"/>
 	<xsd:include schemaLocation="edist_structures.xsd"/>
 	<!--
@@ -12,7 +12,7 @@
 -->
 	<xsd:element name="BaggageChargesRQ">
 		<xsd:annotation>
-			<xsd:documentation source="DESCRIPTION" xml:lang="en">The BaggageCharges transaction set determines and returns the pricing for a set of checked bags. Request qualifiers include Traveler, origin/ destination, point of sale, flight-specific and ticketed fare information. 
+			<xsd:documentation source="DESCRIPTION" xml:lang="en">The BaggageCharges transaction set determines and returns the pricing for a set of checked bags. Request qualifiers include Traveler, origin/ destination, point of sale, flight-specific and ticketed fare information.
 
 The response returns the baggage charges, whether or not IATA Reso 302 or DOT rules are applicable, and detailed trip-level pricing for all requested passengers, or origin/ destination level pricing that includes checked and carry-on baggage charges</xsd:documentation>
 		</xsd:annotation>
@@ -36,7 +36,7 @@ Note: These capabilities may not be supported by all NDC-enabled systems or may 
 				</xsd:element>
 				<xsd:choice>
 					<xsd:annotation>
-						<xsd:documentation source="description" xml:lang="en">Choice between entering: 
+						<xsd:documentation source="description" xml:lang="en">Choice between entering:
 1) Cached Shopping Offer IDs
 2) Detailed Query Parameters</xsd:documentation>
 					</xsd:annotation>

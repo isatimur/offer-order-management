@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2015 (http://www.altova.com) by Atul Bhabal (JR Technologies, Inc.) -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iata.org/IATA/EDIST" targetNamespace="http://www.iata.org/IATA/EDIST" elementFormDefault="qualified" attributeFormDefault="unqualified" version="4.000" id="IATA2016.2">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iata.org/IATA/EDIST" targetNamespace="http://www.iata.org/IATA/EDIST" elementFormDefault="qualified" attributeFormDefault="unqualified" version="4.000" id="IATA2016.1">
 	<xsd:include schemaLocation="edist_commontypes.xsd"/>
 	<xsd:include schemaLocation="edist_structures.xsd"/>
 	<!--
@@ -12,9 +12,9 @@
 -->
 	<xsd:element name="ItinReshopRQ">
 		<xsd:annotation>
-			<xsd:documentation source="description" xml:lang="en">The ItinReshop transaction set passes new shopping requests to an airline to replace existing specified order or order items in an Order or for new shopping requests to add to an existing Order. 
+			<xsd:documentation source="description" xml:lang="en">The ItinReshop transaction set passes new shopping requests to an airline to replace existing specified order or order items in an Order or for new shopping requests to add to an existing Order.
 
-Airline responds with product offers within the context of the existing Order. This transaction may also be used to re-price an order (e.g. prior to payment). 
+Airline responds with product offers within the context of the existing Order. This transaction may also be used to re-price an order (e.g. prior to payment).
 
 There is no change to the Order or Order Items. Typically this transaction will be followed by an OrderChangeRQ or OrderCancelRQ or AirDocRefundRQ or AirDocExchangeRQ transaction, to commit the re-shop offer.</xsd:documentation>
 		</xsd:annotation>
@@ -173,7 +173,7 @@ Notes:
 														<xsd:annotation>
 															<xsd:documentation source="description" xml:lang="en">Qualifier choices.
 
-Notes: 
+Notes:
 1. These qualifiers may be specified for (e.g. apply to) both Attribute and Affinity queries.
 2. These capabilities may not be supported by all NDC-enabled systems or may be supported by bilateral agreement only. If supported, the technical implementation of the capability is not dictated by this specification. </xsd:documentation>
 														</xsd:annotation>
@@ -197,7 +197,7 @@ Notes:
 														<xsd:annotation>
 															<xsd:documentation source="description" xml:lang="en">Preference choices.
 
-Notes: 
+Notes:
 1. These preferences may be specified for (e.g. apply to) both Attribute and Affinity queries.
 2. These capabilities may not be supported by all NDC-enabled systems or may be supported by bilateral agreement only. If supported, the technical implementation of the capability is not dictated by this specification. </xsd:documentation>
 														</xsd:annotation>

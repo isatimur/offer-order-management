@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2014 rel. 2 sp1 (x64) (http://www.altova.com) by JRT (JR Technologies, Inc.) -->
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.001" id="IATA2016.2">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.001" id="IATA2016.1">
 	<xsd:annotation>
 		<xsd:documentation xml:lang="en">EDIST XML Specification Base Structures. Includes base types for EDIST XML data objects, utility xml objects and core simple type definitions.</xsd:documentation>
 	</xsd:annotation>
@@ -196,7 +196,7 @@ Note: This token pertains to all specified List instances, e.g. the list collect
 ============
 Feature(s)
 ============
-• Within an NDC message document, there may be additional data that needs to be exchanged that is not defined in the NDC Digest as it is unique to an NDC implementer and their trading partners. For example, there are data elements within the NDC message payload that may subject to corporate data collection, management and dissemination policy(s), such as PCI. 
+• Within an NDC message document, there may be additional data that needs to be exchanged that is not defined in the NDC Digest as it is unique to an NDC implementer and their trading partners. For example, there are data elements within the NDC message payload that may subject to corporate data collection, management and dissemination policy(s), such as PCI.
 
 • Augmentation is the mechanism prescribed by NDC to create a new implementer-derived type, via the extension of an existing NDC Augmentation type—by adding a block of elements bundled together in another type called an "augmentation type." Augmentation objects explicitly show that data is just attached to an object without making a special version of that object. The end result is more like an object with bags of elements rather than a special type of object.
 
@@ -490,7 +490,7 @@ Example: 23D20750-1FFE-4EA7-A5CD-A4B9733A491B</xsd:documentation>
 					</xsd:attribute>
 					<xsd:attribute name="From" type="ContextSimpleType" use="optional">
 						<xsd:annotation>
-							<xsd:documentation>From Object Name. 
+							<xsd:documentation>From Object Name.
 
 Example: FlightSegmentList</xsd:documentation>
 						</xsd:annotation>
@@ -1287,7 +1287,7 @@ Example: www.thislink.com</xsd:documentation>
     P E R I O D  R E P R E S E N T A T I O N  D E F I N I T I O N S
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ===========================================================================
-Note: 
+Note:
 = The Period element is the period representation subgrp head element.
 = The Date element is the date representation subgrp head element.
 ===========================================================================-->

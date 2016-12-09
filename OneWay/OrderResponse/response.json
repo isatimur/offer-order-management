@@ -1,0 +1,747 @@
+{
+  "document": {
+    "name": "C9",
+    "referenceVersion": "1.0"
+  },
+  "party": {
+    "sender": {
+      "travelAgencySender": {
+        "contacts": [
+          {
+            "emailContact": {
+              "address": {
+                "value": "ndc@usdtravel.com"
+              }
+            }
+          }
+        ],
+        "pseudoCity": {
+          "value": "A4A"
+        },
+        "agencyID": {
+          "value": "C9",
+          "owner": "C9"
+        },
+        "agentUser": {
+          "name": "ksmith",
+          "agentUserID": {
+            "value": "ramesh@jrt.com"
+          },
+          "userRole": "ADMIN"
+        },
+        "iatanumber": "98417900"
+      }
+    },
+    "participants": {
+      "name": "{http://www.iata.org/IATA/EDIST}Participants",
+      "declaredType": "org.iata.iata.edist.MsgPartiesType$Participants",
+      "scope": "org.iata.iata.edist.MsgPartiesType",
+      "nil": true,
+      "globalScope": false,
+      "typeSubstituted": false
+    },
+    "recipient": {
+      "name": "{http://www.iata.org/IATA/EDIST}Recipient",
+      "declaredType": "org.iata.iata.edist.MsgPartiesType$Recipient",
+      "scope": "org.iata.iata.edist.MsgPartiesType",
+      "nil": true,
+      "globalScope": false,
+      "typeSubstituted": false
+    }
+  },
+  "success": {},
+  "response": {
+    "orderViewProcessing": {},
+    "passengers": {
+      "passenger": [
+        {
+          "objectKey": "PAX1",
+          "ptc": {
+            "value": "ADT",
+            "quantity": 1
+          },
+          "residenceCode": {
+            "value": "US"
+          },
+          "age": {
+            "birthDate": {
+              "value": "1985-09-03T20:00:00.000+0000"
+            }
+          },
+          "name": {
+            "surname": {
+              "value": "Patel"
+            },
+            "given": [
+              {
+                "value": "Ramesh"
+              }
+            ],
+            "middle": [
+              {
+                "value": "N"
+              }
+            ]
+          },
+          "profileID": {
+            "value": "102660091995001"
+          },
+          "contacts": [
+            {
+              "addressContact": {
+                "street": [
+                  "22 Main Street"
+                ],
+                "postalCode": "14202",
+                "countryCode": {
+                  "value": "DE"
+                }
+              }
+            },
+            {
+              "emailContact": {
+                "address": {
+                  "value": "ramesh@jrtechnologies.com"
+                }
+              }
+            },
+            {
+              "phoneContact": {
+                "application": "Emergency",
+                "number": [
+                  {
+                    "value": "9869159259"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "order": [
+      {
+        "orderID": {
+          "value": "L9A8W0",
+          "owner": "C9"
+        },
+        "bookingReferences": [
+          {
+            "id": "dc593f",
+            "airlineID": {
+              "value": "C9"
+            }
+          }
+        ],
+        "totalOrderPrice": {
+          "detailCurrencyPrice": {
+            "total": {
+              "value": 65450,
+              "taxable": true,
+              "code": "EUR"
+            },
+            "taxes": {
+              "total": {
+                "value": 25272,
+                "taxable": true
+              }
+            }
+          }
+        },
+        "orderItems": {
+          "orderItem": [
+            {
+              "orderItemID": {
+                "value": "1#M#109974565#309974565",
+                "owner": "JRT"
+              },
+              "flightItem": {
+                "originDestination": [
+                  {
+                    "flight": [
+                      {
+                        "departure": {
+                          "airportCode": {
+                            "value": "FRA"
+                          },
+                          "date": "2016-05-25T21:00:00.000+0000"
+                        },
+                        "arrival": {
+                          "airportCode": {
+                            "value": "CDG"
+                          }
+                        },
+                        "marketingCarrier": {
+                          "airlineID": {
+                            "value": "C9"
+                          },
+                          "name": "Kronos Air",
+                          "flightNumber": {
+                            "value": "1030"
+                          }
+                        },
+                        "operatingCarrier": {
+                          "airlineID": {
+                            "value": "C9"
+                          }
+                        },
+                        "refs": [
+                          {
+                            "departure": {
+                              "airportCode": {
+                                "value": "FRA"
+                              },
+                              "date": "2016-05-25T21:00:00.000+0000",
+                              "time": "09:35",
+                              "airportName": "Frankfurt International"
+                            },
+                            "arrival": {
+                              "airportCode": {
+                                "value": "CDG"
+                              },
+                              "date": "2016-05-25T21:00:00.000+0000",
+                              "time": "10:45",
+                              "airportName": "Charles de Gaulle"
+                            },
+                            "marketingCarrier": {
+                              "airlineID": {
+                                "value": "C9"
+                              },
+                              "name": "Kronos Air",
+                              "flightNumber": {
+                                "value": "1030"
+                              }
+                            },
+                            "operatingCarrier": {
+                              "airlineID": {
+                                "value": "C9"
+                              },
+                              "name": "Kronos Air",
+                              "flightNumber": {
+                                "value": "1030"
+                              }
+                            },
+                            "equipment": {
+                              "aircraftCode": {
+                                "value": "320"
+                              },
+                              "name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+                            },
+                            "flightDetail": {
+                              "flightDuration": {
+                                "value": "PT1H10M"
+                              }
+                            },
+                            "segmentKey": "SEG5"
+                          }
+                        ]
+                      },
+                      {
+                        "departure": {
+                          "airportCode": {
+                            "value": "CDG"
+                          },
+                          "date": "2016-05-25T21:00:00.000+0000"
+                        },
+                        "arrival": {
+                          "airportCode": {
+                            "value": "TXL"
+                          }
+                        },
+                        "marketingCarrier": {
+                          "airlineID": {
+                            "value": "C9"
+                          },
+                          "name": "Kronos Air",
+                          "flightNumber": {
+                            "value": "1030"
+                          }
+                        },
+                        "operatingCarrier": {
+                          "airlineID": {
+                            "value": "C9"
+                          }
+                        },
+                        "refs": [
+                          {
+                            "departure": {
+                              "airportCode": {
+                                "value": "CDG"
+                              },
+                              "date": "2016-05-25T21:00:00.000+0000",
+                              "time": "14:45",
+                              "airportName": "Charles de Gaulle"
+                            },
+                            "arrival": {
+                              "airportCode": {
+                                "value": "TXL"
+                              },
+                              "date": "2016-05-25T21:00:00.000+0000",
+                              "time": "16:25",
+                              "airportName": "Berlin Tegel Airport"
+                            },
+                            "marketingCarrier": {
+                              "airlineID": {
+                                "value": "C9"
+                              },
+                              "name": "Kronos Air",
+                              "flightNumber": {
+                                "value": "1030"
+                              }
+                            },
+                            "operatingCarrier": {
+                              "airlineID": {
+                                "value": "C9"
+                              },
+                              "name": "Kronos Air",
+                              "flightNumber": {
+                                "value": "1030"
+                              }
+                            },
+                            "equipment": {
+                              "aircraftCode": {
+                                "value": "320"
+                              },
+                              "name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+                            },
+                            "flightDetail": {
+                              "flightDuration": {
+                                "value": "PT1H40M"
+                              }
+                            },
+                            "segmentKey": "SEG6"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "associations": {
+                "passengers": {
+                  "passengerReferences": [
+                    {
+                      "objectKey": "PAX1",
+                      "ptc": {
+                        "value": "ADT",
+                        "quantity": 1
+                      },
+                      "residenceCode": {
+                        "value": "US"
+                      },
+                      "age": {
+                        "birthDate": {
+                          "value": "1985-09-03T20:00:00.000+0000"
+                        }
+                      },
+                      "name": {
+                        "surname": {
+                          "value": "Patel"
+                        },
+                        "given": [
+                          {
+                            "value": "Ramesh"
+                          }
+                        ],
+                        "middle": [
+                          {
+                            "value": "N"
+                          }
+                        ]
+                      },
+                      "profileID": {
+                        "value": "102660091995001"
+                      },
+                      "contacts": [
+                        {
+                          "addressContact": {
+                            "street": [
+                              "22 Main Street"
+                            ],
+                            "postalCode": "14202",
+                            "countryCode": {
+                              "value": "DE"
+                            }
+                          }
+                        },
+                        {
+                          "emailContact": {
+                            "address": {
+                              "value": "ramesh@jrtechnologies.com"
+                            }
+                          }
+                        },
+                        {
+                          "phoneContact": {
+                            "application": "Emergency",
+                            "number": [
+                              {
+                                "value": "9869159259"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "dataLists": {
+      "flightSegmentList": [
+        {
+          "departure": {
+            "airportCode": {
+              "value": "FRA"
+            },
+            "date": "2016-05-25T21:00:00.000+0000",
+            "time": "09:35",
+            "airportName": "Frankfurt International"
+          },
+          "arrival": {
+            "airportCode": {
+              "value": "CDG"
+            },
+            "date": "2016-05-25T21:00:00.000+0000",
+            "time": "10:45",
+            "airportName": "Charles de Gaulle"
+          },
+          "marketingCarrier": {
+            "airlineID": {
+              "value": "C9"
+            },
+            "name": "Kronos Air",
+            "flightNumber": {
+              "value": "1030"
+            }
+          },
+          "operatingCarrier": {
+            "airlineID": {
+              "value": "C9"
+            },
+            "name": "Kronos Air",
+            "flightNumber": {
+              "value": "1030"
+            }
+          },
+          "equipment": {
+            "aircraftCode": {
+              "value": "320"
+            },
+            "name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+          },
+          "flightDetail": {
+            "flightDuration": {
+              "value": "PT1H10M"
+            }
+          },
+          "segmentKey": "SEG5"
+        },
+        {
+          "departure": {
+            "airportCode": {
+              "value": "CDG"
+            },
+            "date": "2016-05-25T21:00:00.000+0000",
+            "time": "14:45",
+            "airportName": "Charles de Gaulle"
+          },
+          "arrival": {
+            "airportCode": {
+              "value": "TXL"
+            },
+            "date": "2016-05-25T21:00:00.000+0000",
+            "time": "16:25",
+            "airportName": "Berlin Tegel Airport"
+          },
+          "marketingCarrier": {
+            "airlineID": {
+              "value": "C9"
+            },
+            "name": "Kronos Air",
+            "flightNumber": {
+              "value": "1030"
+            }
+          },
+          "operatingCarrier": {
+            "airlineID": {
+              "value": "C9"
+            },
+            "name": "Kronos Air",
+            "flightNumber": {
+              "value": "1030"
+            }
+          },
+          "equipment": {
+            "aircraftCode": {
+              "value": "320"
+            },
+            "name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+          },
+          "flightDetail": {
+            "flightDuration": {
+              "value": "PT1H40M"
+            }
+          },
+          "segmentKey": "SEG6"
+        }
+      ],
+      "flightList": [
+        {
+          "segmentReferences": {
+            "value": [
+              {
+                "departure": {
+                  "airportCode": {
+                    "value": "FRA"
+                  },
+                  "date": "2016-05-25T21:00:00.000+0000",
+                  "time": "09:35",
+                  "airportName": "Frankfurt International"
+                },
+                "arrival": {
+                  "airportCode": {
+                    "value": "CDG"
+                  },
+                  "date": "2016-05-25T21:00:00.000+0000",
+                  "time": "10:45",
+                  "airportName": "Charles de Gaulle"
+                },
+                "marketingCarrier": {
+                  "airlineID": {
+                    "value": "C9"
+                  },
+                  "name": "Kronos Air",
+                  "flightNumber": {
+                    "value": "1030"
+                  }
+                },
+                "operatingCarrier": {
+                  "airlineID": {
+                    "value": "C9"
+                  },
+                  "name": "Kronos Air",
+                  "flightNumber": {
+                    "value": "1030"
+                  }
+                },
+                "equipment": {
+                  "aircraftCode": {
+                    "value": "320"
+                  },
+                  "name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+                },
+                "flightDetail": {
+                  "flightDuration": {
+                    "value": "PT1H10M"
+                  }
+                },
+                "segmentKey": "SEG5"
+              },
+              {
+                "departure": {
+                  "airportCode": {
+                    "value": "CDG"
+                  },
+                  "date": "2016-05-25T21:00:00.000+0000",
+                  "time": "14:45",
+                  "airportName": "Charles de Gaulle"
+                },
+                "arrival": {
+                  "airportCode": {
+                    "value": "TXL"
+                  },
+                  "date": "2016-05-25T21:00:00.000+0000",
+                  "time": "16:25",
+                  "airportName": "Berlin Tegel Airport"
+                },
+                "marketingCarrier": {
+                  "airlineID": {
+                    "value": "C9"
+                  },
+                  "name": "Kronos Air",
+                  "flightNumber": {
+                    "value": "1030"
+                  }
+                },
+                "operatingCarrier": {
+                  "airlineID": {
+                    "value": "C9"
+                  },
+                  "name": "Kronos Air",
+                  "flightNumber": {
+                    "value": "1030"
+                  }
+                },
+                "equipment": {
+                  "aircraftCode": {
+                    "value": "320"
+                  },
+                  "name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+                },
+                "flightDetail": {
+                  "flightDuration": {
+                    "value": "PT1H40M"
+                  }
+                },
+                "segmentKey": "SEG6"
+              }
+            ]
+          },
+          "flightKey": "FL1"
+        }
+      ],
+      "originDestinationList": [
+        {
+          "departureCode": {
+            "value": "FRA"
+          },
+          "arrivalCode": {
+            "value": "TXL"
+          },
+          "originDestinationKey": "OD1",
+          "flightReferences": {
+            "value": [
+              {
+                "segmentReferences": {
+                  "value": [
+                    {
+                      "departure": {
+                        "airportCode": {
+                          "value": "FRA"
+                        },
+                        "date": "2016-05-25T21:00:00.000+0000",
+                        "time": "09:35",
+                        "airportName": "Frankfurt International"
+                      },
+                      "arrival": {
+                        "airportCode": {
+                          "value": "CDG"
+                        },
+                        "date": "2016-05-25T21:00:00.000+0000",
+                        "time": "10:45",
+                        "airportName": "Charles de Gaulle"
+                      },
+                      "marketingCarrier": {
+                        "airlineID": {
+                          "value": "C9"
+                        },
+                        "name": "Kronos Air",
+                        "flightNumber": {
+                          "value": "1030"
+                        }
+                      },
+                      "operatingCarrier": {
+                        "airlineID": {
+                          "value": "C9"
+                        },
+                        "name": "Kronos Air",
+                        "flightNumber": {
+                          "value": "1030"
+                        }
+                      },
+                      "equipment": {
+                        "aircraftCode": {
+                          "value": "320"
+                        },
+                        "name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+                      },
+                      "flightDetail": {
+                        "flightDuration": {
+                          "value": "PT1H10M"
+                        }
+                      },
+                      "segmentKey": "SEG5"
+                    },
+                    {
+                      "departure": {
+                        "airportCode": {
+                          "value": "CDG"
+                        },
+                        "date": "2016-05-25T21:00:00.000+0000",
+                        "time": "14:45",
+                        "airportName": "Charles de Gaulle"
+                      },
+                      "arrival": {
+                        "airportCode": {
+                          "value": "TXL"
+                        },
+                        "date": "2016-05-25T21:00:00.000+0000",
+                        "time": "16:25",
+                        "airportName": "Berlin Tegel Airport"
+                      },
+                      "marketingCarrier": {
+                        "airlineID": {
+                          "value": "C9"
+                        },
+                        "name": "Kronos Air",
+                        "flightNumber": {
+                          "value": "1030"
+                        }
+                      },
+                      "operatingCarrier": {
+                        "airlineID": {
+                          "value": "C9"
+                        },
+                        "name": "Kronos Air",
+                        "flightNumber": {
+                          "value": "1030"
+                        }
+                      },
+                      "equipment": {
+                        "aircraftCode": {
+                          "value": "320"
+                        },
+                        "name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+                      },
+                      "flightDetail": {
+                        "flightDuration": {
+                          "value": "PT1H40M"
+                        }
+                      },
+                      "segmentKey": "SEG6"
+                    }
+                  ]
+                },
+                "flightKey": "FL1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "metadata": {
+      "other": [
+        {
+          "currencyMetadatas": [
+            {
+              "metadataKey": "EUR",
+              "decimals": 2
+            }
+          ]
+        },
+        {
+          "descriptionMetadatas": [
+            {
+              "augmentationPoint": {
+                "augPoint": [
+                  {
+                    "any": "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\n<a:Logo xmlns=\"http://www.iata.org/IATA/EDIST\" xmlns:a=\"http://www.iata.org\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n                                        http://uat.jrtechnologies.in/ServiceImage/kronos-50x90.png\n                                    </a:Logo>"
+                  }
+                ]
+              },
+              "metadataKey": "ID1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "timeStamp": "0001-01-02T21:00:00.000+0000",
+  "target": "Production",
+  "version": "15.2"
+}

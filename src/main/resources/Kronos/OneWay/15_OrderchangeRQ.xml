@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OrderChangeRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.iata.org/IATA/EDIST"
                xsi:schemaLocation="http://www.iata.org/IATA/EDIST
-../OrderChangeRQ.xsd" EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-12-10T12:39:00Z" Version="15.2"
+/OrderChangeRQ.xsd" EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-12-10T12:39:00Z" Version="16.1"
                Target="Test" PrimaryLangID="en" AltLangID="en" RetransmissionIndicator="false"
                AsynchronousAllowedInd="false" TransactionIdentifier="a" SequenceNmbr="101">
     <Document>
@@ -106,7 +106,7 @@
             </OrderItems>
         </Order>
     </Query>
-    <DataList>
+    <DataLists>
         <FlightSegmentList>
             <FlightSegment SegmentKey="SEG5">
                 <Departure>
@@ -191,5 +191,5 @@
             </OriginDestination>
         </OriginDestinationList>
 
-    </DataList>
+    </DataLists>
 </OrderChangeRQ>

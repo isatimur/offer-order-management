@@ -1,5 +1,5 @@
 <OrderViewRS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TimeStamp="0001-01-01T00:00:00"
-             Version="15.2" xmlns="http://www.iata.org/IATA/EDIST"
+             Version="16.1" xmlns="http://www.iata.org/IATA/EDIST"
              xsi:schemaLocation="http://www.iata.org/IATA/EDIST /OrderViewRS.xsd">
     <Document>
         <Name>C9</Name>
