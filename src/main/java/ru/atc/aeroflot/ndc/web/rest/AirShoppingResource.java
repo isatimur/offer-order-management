@@ -74,6 +74,22 @@ public class AirShoppingResource {
         return airShoppingRQ;
     }
 
+    @GetMapping(path = "/offers/roundtrip/request", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @Timed
+    public AirShoppingRQ getRoundtripRequest() {
+        //TODO create AirShoppingRQ request
+        AirShoppingRQ airShoppingRQ = shoppingService.roundTripRequest();
+        return airShoppingRQ;
+    }
+
+    @GetMapping(path = "/offers/roundtrip/response", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    @Timed
+    public AirShoppingRS getRoundtripResponse() {
+        //TODO create AirShoppingRQ request
+        AirShoppingRS airShoppingRS = shoppingService.roundTripResponse();
+        return airShoppingRS;
+    }
+
 
     @GetMapping(path = "/offers/onewaytrip", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
     @Timed

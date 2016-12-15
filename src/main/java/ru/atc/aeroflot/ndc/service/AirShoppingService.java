@@ -25,18 +25,27 @@ public class AirShoppingService {
     }
 
     public AirShoppingRS oneWay(AirShoppingRQ request) {
-        AirShoppingRS airShoppingRS = NDCUtil.getMockResponse(resourceLoader,AirShoppingRS.class, "classpath:/Kronos/OneWay/02_AirshoppingRS.xml");
+        AirShoppingRS airShoppingRS = NDCUtil.getMockResponse(resourceLoader, AirShoppingRS.class, "classpath:/Kronos/OneWay/02_AirshoppingRS.xml");
         return airShoppingRS;
     }
 
     public AirShoppingRQ oneWayRequestExample() {
-        AirShoppingRQ airShoppingRQ = NDCUtil.getMockResponse(resourceLoader,AirShoppingRQ.class, "classpath:/Kronos/OneWay/01_AirshoppingRQ.xml");
+        AirShoppingRQ airShoppingRQ = NDCUtil.getMockResponse(resourceLoader, AirShoppingRQ.class, "classpath:/Kronos/OneWay/01_AirshoppingRQ.xml");
         return airShoppingRQ;
     }
 
     public AirShoppingRS twoWayTrip(AirShoppingRQ request) {
-        AirShoppingRS airShoppingRS = NDCUtil.getMockResponse(resourceLoader,AirShoppingRS.class, "classpath:/Kronos/RoundTrip/02_AirshoppingRS_RoundTrip.xml");
+        AirShoppingRS airShoppingRS = NDCUtil.getMockResponse(resourceLoader, AirShoppingRS.class, "classpath:/Kronos/RoundTrip/02_AirshoppingRS_RoundTrip.xml");
         return airShoppingRS;
     }
 
+    public AirShoppingRQ roundTripRequest() {
+        AirShoppingRQ airShoppingRQ = NDCUtil.getMockResponse(resourceLoader, AirShoppingRQ.class, "classpath:/Kronos/RoundTrip/01_AirshoppingRQ_RoundTrip.xml");
+        return airShoppingRQ;
+    }
+
+    public AirShoppingRS roundTripResponse() {
+        AirShoppingRS airShoppingRS = NDCUtil.getMockResponse(resourceLoader, AirShoppingRS.class, "classpath:/Kronos/RoundTrip/02_AirshoppingRS_RoundTrip.xml");
+        return airShoppingRS;
+    }
 }
